@@ -30,6 +30,7 @@ mk_tarball() {
 }
 
 main() {
+  cd cli/
   mk_artifacts
   mk_tarball
 }

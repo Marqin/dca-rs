@@ -1,16 +1,18 @@
 [package]
-name = "dca-rs"
+name = "dca"
 version = "0.1.0"
 authors = ["Nicholas Stafie <nicholasstafie@gmail.com>"]
-build = "build.rs"
 
-[build-dependencies]
-serde_codegen = "0.7.0"
-syntex = "0.29.0"
+[features]
+default = ["ffmpeg-sys/static",
+           "ffmpeg-sys/default",
+           "ffmpeg-sys/build-lib-openssl",
+           "ffmpeg-sys/build-lib-opus",
+           "ffmpeg-sys/build-pic"]
 
 [dependencies]
-clap = "2.1.2"
 opus = { path = "lib/opus-rs" }
 serde = "0.7.0"
 serde_json = "0.7.0"
-byteorder = "0.5.0"
+ffmpeg-sys = { path = "lib/rust-ffmpeg-sys" }
+libc = "0.2.8"

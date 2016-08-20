@@ -53,6 +53,7 @@ run_test_suite() {
 }
 
 main() {
+  cd cli/
   disable_cross_doctests
   run_test_suite
 }

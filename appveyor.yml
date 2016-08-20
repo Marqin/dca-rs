@@ -22,6 +22,7 @@ install:
 build: false
 
 test_script:
+  - cd cli/
   - rename C:\msys64\mingw32\bin\mingw32-make.exe make.exe
   - rename C:\msys64\mingw64\bin\mingw32-make.exe make.exe
   - cargo build --verbose
@@ -29,6 +30,7 @@ test_script:
   - cargo test
 
 before_deploy:
+  - cd cli/
   - cargo build --release
   - mkdir staging
   - copy target\release\dca-rs.exe staging
