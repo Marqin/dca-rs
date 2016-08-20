@@ -1,2 +1,7 @@
 target
 *.sublime*
+*.wav
+*.flac
+*.mp3
+*.dca
+*.bin
