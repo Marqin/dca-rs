@@ -1,6 +1,6 @@
 # dca-rs
 
-Rust implementation of the [DCA1](https://github.com/bwmarrin/dca/wiki/DCA1-specification-draft) format.
+Rust implementation of the [DCA1](https://github.com/bwmarrin/dca/wiki/DCA1-specification) format.
 
 For more information, see the reference implementation: https://github.com/bwmarrin/dca
 
